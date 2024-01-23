@@ -3,6 +3,9 @@ package com.example.library.management.system.entitities;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Table(name="Author")
 @NoArgsConstructor
@@ -16,6 +19,10 @@ public class Author {
     private int authorId;
     private String authorname;
     private int age;
+    @Column(unique = true,nullable = false)
     private String email;
+    private int noOfBooksWritten;
+    @OneToMany (mappedBy = "author", cascade= CascadeType.ALL)
+    private List <Book> bookList= new ArrayList<>();
 
 }

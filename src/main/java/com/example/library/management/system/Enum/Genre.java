@@ -8,6 +8,7 @@ public enum Genre {
     COURSE,
     PLACEMENT,
     MYTHOLOGY,
-    BIOGRAPHY
+    BIOGRAPHY,
+    ROMANCE
 
 }

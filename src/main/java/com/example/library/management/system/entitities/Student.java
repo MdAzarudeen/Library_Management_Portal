@@ -14,7 +14,6 @@ import org.springframework.stereotype.Service;
 @Setter
 @AllArgsConstructor
 public class Student {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int StudentId;
@@ -22,4 +21,6 @@ public class Student {
     private String branch;
     private double cgpa;
     private String phoneNo;
+    @OneToOne (mappedBy = "student",cascade = CascadeType.ALL)
+    private LibraryCard libraryCard;
 }

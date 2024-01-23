@@ -22,9 +22,16 @@ public class Book {
         private Genre bookgenre;
         private int noOfPages;
         private int price;
-        private Date publishDate;
+        private String publishDate;
         @JoinColumn
         @ManyToOne
         private Author author;
 
+        public Book(String bookname, Genre bookgenre, int noOfPages, int price, String publishDate) {
+                this.bookname = bookname;
+                this.bookgenre = bookgenre;
+                this.noOfPages = noOfPages;
+                this.price = price;
+                this.publishDate = publishDate;
+        }
 }
