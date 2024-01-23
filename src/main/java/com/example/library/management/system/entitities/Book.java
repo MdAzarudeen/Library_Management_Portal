@@ -4,7 +4,9 @@ import com.example.library.management.system.Enum.Genre;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table (name="Book")
@@ -13,6 +15,7 @@ import java.util.Date;
 @Setter
 @AllArgsConstructor
 public class Book {
+
         @Id
         @GeneratedValue (strategy = GenerationType.IDENTITY)
         private int bookId;
@@ -23,9 +26,13 @@ public class Book {
         private int noOfPages;
         private int price;
         private String publishDate;
+        private boolean isAvailable;
         @JoinColumn
         @ManyToOne
         private Author author;
+
+        @OneToMany (mappedBy = "book",cascade = CascadeType.ALL )
+        private List<Transaction> transactionList=new ArrayList<>();
 
         public Book(String bookname, Genre bookgenre, int noOfPages, int price, String publishDate) {
                 this.bookname = bookname;

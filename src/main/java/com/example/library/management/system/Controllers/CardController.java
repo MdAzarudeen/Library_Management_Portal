@@ -18,7 +18,7 @@ public class CardController {
     }
 
     @PutMapping ("/AssociateAcardWithAStudent")
-    public ResponseEntity AssociateAcardWithAStudent  (AssociateStudentCard associateStudentCard) throws Exception {
+    public ResponseEntity AssociateAcardWithAStudent  (@RequestBody AssociateStudentCard associateStudentCard) throws Exception {
          try{
             return new ResponseEntity (cardService.AssociateAcardWithAStudent(associateStudentCard),HttpStatus.OK);
          }

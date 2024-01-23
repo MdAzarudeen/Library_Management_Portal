@@ -20,7 +20,7 @@ public class StudentController {
     }
 
     @GetMapping ("/getStudentFromId")
-    public ResponseEntity getStudentFromId (@RequestParam int StudentId) {
+    public ResponseEntity getStudentFromId (@RequestParam ("sId") int StudentId) {
         try{
             Student student= studentService.getStudentFromId(StudentId);
             return new ResponseEntity(student,HttpStatus.OK);
