@@ -19,4 +19,9 @@ public class BookController {
         return new ResponseEntity(bookService.addBook(addBookRequest),HttpStatus.CREATED);
     }
 
+    @PutMapping("/associateAuthorBook")
+    public ResponseEntity associateAuthorBook (@RequestParam int bId,@RequestParam int aId) {
+        return new ResponseEntity(bookService.associateAuthorBook(bId,aId),HttpStatus.OK);
+    }
+
 }

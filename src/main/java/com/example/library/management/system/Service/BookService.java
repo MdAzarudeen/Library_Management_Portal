@@ -6,7 +6,9 @@ import com.example.library.management.system.RequestDTOs.AddBookRequest;
 import com.example.library.management.system.entitities.Author;
 import com.example.library.management.system.entitities.Book;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
@@ -33,7 +35,15 @@ public class BookService {
         Book savedbook=bookRepository.save(newbook);
         authorRepository.save(author);
         return "New book saved with bookId "+savedbook.getBookId();
+    }
 
+
+    public String associateAuthorBook (int bId,  int aId) {
+        Book book=bookRepository.findById(bId).get();
+        Author author=authorRepository.findById(aId).get();
+        book.setAuthor(author);
+        bookRepository.save(book);
+        return aId+" ASSOCIATED WITH BOOK ID "+bId;
 
     }
 }

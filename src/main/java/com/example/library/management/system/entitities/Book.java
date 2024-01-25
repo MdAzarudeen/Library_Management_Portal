@@ -26,7 +26,7 @@ public class Book {
         private int noOfPages;
         private int price;
         private String publishDate;
-        private boolean isAvailable;
+        private boolean isAvailable=true;
         @JoinColumn
         @ManyToOne
         private Author author;

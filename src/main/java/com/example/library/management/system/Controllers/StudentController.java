@@ -23,7 +23,7 @@ public class StudentController {
     public ResponseEntity getStudentFromId (@RequestParam ("sId") int StudentId) {
         try{
             Student student= studentService.getStudentFromId(StudentId);
-            return new ResponseEntity(student,HttpStatus.OK);
+            return new ResponseEntity(student.getName(),HttpStatus.OK);
         }
         catch(Exception e){
             return new ResponseEntity(e.getMessage(),HttpStatus.BAD_REQUEST);
