@@ -1,8 +1,7 @@
-package com.example.library.management.system.Controllers;
+package com.example.librarymanagementsystem.Controllers;
 
-import com.example.library.management.system.RequestDTOs.AddBookRequest;
-import com.example.library.management.system.Service.BookService;
-import com.example.library.management.system.entitities.Book;
+import com.example.librarymanagementsystem.RequestDTOs.AddBookRequest;
+import com.example.librarymanagementsystem.Service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

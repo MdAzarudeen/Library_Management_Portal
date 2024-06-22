@@ -1,12 +1,12 @@
-package com.example.library.management.system.Service;
+package com.example.librarymanagementsystem.Service;
 
 
-import com.example.library.management.system.Enum.CardStatus;
-import com.example.library.management.system.Repository.CardRepository;
-import com.example.library.management.system.Repository.StudentRepository;
-import com.example.library.management.system.RequestDTOs.AssociateStudentCard;
-import com.example.library.management.system.entitities.LibraryCard;
-import com.example.library.management.system.entitities.Student;
+import com.example.librarymanagementsystem.Enum.CardStatus;
+import com.example.librarymanagementsystem.Repository.CardRepository;
+import com.example.librarymanagementsystem.Repository.StudentRepository;
+import com.example.librarymanagementsystem.RequestDTOs.AssociateStudentCard;
+import com.example.librarymanagementsystem.entitities.LibraryCard;
+import com.example.librarymanagementsystem.entitities.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,12 +1,10 @@
-package com.example.library.management.system.Service;
+package com.example.librarymanagementsystem.Service;
 
-import com.example.library.management.system.Repository.StudentRepository;
-import com.example.library.management.system.RequestDTOs.ModifyStudentPhoneNo;
-import com.example.library.management.system.entitities.Student;
-import org.springframework.beans.factory.ObjectProvider;
+import com.example.librarymanagementsystem.Repository.StudentRepository;
+import com.example.librarymanagementsystem.RequestDTOs.ModifyStudentPhoneNo;
+import com.example.librarymanagementsystem.entitities.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.Optional;
 

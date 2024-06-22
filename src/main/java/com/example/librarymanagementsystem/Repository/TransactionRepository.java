@@ -1,6 +1,6 @@
-package com.example.library.management.system.Repository;
+package com.example.librarymanagementsystem.Repository;
 
-import com.example.library.management.system.entitities.Transaction;
+import com.example.librarymanagementsystem.entitities.Transaction;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface TransactionRepository extends JpaRepository <Transaction,Integer> {

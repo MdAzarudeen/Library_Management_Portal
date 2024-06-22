@@ -1,8 +1,8 @@
-package com.example.library.management.system.Service;
+package com.example.librarymanagementsystem.Service;
 
-import com.example.library.management.system.Repository.AuthorRepository;
-import com.example.library.management.system.RequestDTOs.AddAuthor;
-import com.example.library.management.system.entitities.Author;
+import com.example.librarymanagementsystem.Repository.AuthorRepository;
+import com.example.librarymanagementsystem.RequestDTOs.AddAuthor;
+import com.example.librarymanagementsystem.entitities.Author;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

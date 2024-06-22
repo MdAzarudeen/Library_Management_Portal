@@ -1,4 +1,4 @@
-package com.example.library.management.system.RequestDTOs;
+package com.example.librarymanagementsystem.RequestDTOs;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,8 +1,6 @@
-package com.example.library.management.system.entitities;
+package com.example.librarymanagementsystem.entitities;
 
-import com.example.library.management.system.Enum.Genre;
-import com.example.library.management.system.Enum.TransactionType;
-import com.example.library.management.system.Enum.transactionstatus;
+import com.example.librarymanagementsystem.Enum.TransactionType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -26,7 +24,7 @@ public class Transaction {
 
     @CreatedDate
     private Date createdOn;
-    private transactionstatus transactionstatus;
+    private com.example.librarymanagementsystem.Enum.transactionstatus transactionstatus;
     private int fineamount;
     private TransactionType transactionType;
 

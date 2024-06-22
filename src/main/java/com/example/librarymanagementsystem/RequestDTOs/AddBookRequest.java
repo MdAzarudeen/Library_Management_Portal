@@ -1,6 +1,6 @@
-package com.example.library.management.system.RequestDTOs;
+package com.example.librarymanagementsystem.RequestDTOs;
 
-import com.example.library.management.system.Enum.Genre;
+import com.example.librarymanagementsystem.Enum.Genre;
 import lombok.Getter;
 import lombok.Setter;
 

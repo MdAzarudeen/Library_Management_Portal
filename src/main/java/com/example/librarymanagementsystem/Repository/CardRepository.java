@@ -1,6 +1,6 @@
-package com.example.library.management.system.Repository;
+package com.example.librarymanagementsystem.Repository;
 
-import com.example.library.management.system.entitities.LibraryCard;
+import com.example.librarymanagementsystem.entitities.LibraryCard;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

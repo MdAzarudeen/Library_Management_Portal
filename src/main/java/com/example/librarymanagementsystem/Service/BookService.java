@@ -1,16 +1,12 @@
-package com.example.library.management.system.Service;
+package com.example.librarymanagementsystem.Service;
 
-import com.example.library.management.system.Repository.AuthorRepository;
-import com.example.library.management.system.Repository.BookRepository;
-import com.example.library.management.system.RequestDTOs.AddBookRequest;
-import com.example.library.management.system.entitities.Author;
-import com.example.library.management.system.entitities.Book;
+import com.example.librarymanagementsystem.Repository.AuthorRepository;
+import com.example.librarymanagementsystem.Repository.BookRepository;
+import com.example.librarymanagementsystem.RequestDTOs.AddBookRequest;
+import com.example.librarymanagementsystem.entitities.Author;
+import com.example.librarymanagementsystem.entitities.Book;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestParam;
-
-import java.util.List;
 
 @Service
 public class BookService {

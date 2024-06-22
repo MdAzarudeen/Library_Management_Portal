@@ -1,4 +1,4 @@
-package com.example.library.management.system.Enum;
+package com.example.librarymanagementsystem.Enum;
 
 public enum TransactionType {
     ISSUED,

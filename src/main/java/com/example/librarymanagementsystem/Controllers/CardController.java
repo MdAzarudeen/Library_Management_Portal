@@ -1,7 +1,7 @@
-package com.example.library.management.system.Controllers;
+package com.example.librarymanagementsystem.Controllers;
 
-import com.example.library.management.system.RequestDTOs.AssociateStudentCard;
-import com.example.library.management.system.Service.CardService;
+import com.example.librarymanagementsystem.RequestDTOs.AssociateStudentCard;
+import com.example.librarymanagementsystem.Service.CardService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

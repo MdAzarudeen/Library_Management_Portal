@@ -1,6 +1,6 @@
-package com.example.library.management.system.Controllers;
+package com.example.librarymanagementsystem.Controllers;
 
-import com.example.library.management.system.Service.TransactionService;
+import com.example.librarymanagementsystem.Service.TransactionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

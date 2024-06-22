@@ -1,11 +1,10 @@
-package com.example.library.management.system.entitities;
+package com.example.librarymanagementsystem.entitities;
 
-import com.example.library.management.system.Enum.Genre;
+import com.example.librarymanagementsystem.Enum.Genre;
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 @Entity
